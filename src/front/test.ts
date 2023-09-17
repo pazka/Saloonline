@@ -8,7 +8,7 @@ const loader = new STLLoader()
 
 export function test(scene: THREE.Scene) {
     loader.load(
-        'models/example.stl',
+        'public/models/capybara.stl',
         function (geometry) {
             const mesh = new THREE.Mesh(geometry, material)
             scene.add(mesh)

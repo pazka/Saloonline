@@ -9,8 +9,7 @@
         "forceConsistentCasingInFileNames": true
     },
     "include": [
-        "**/*.ts",
-        "../front/test.ts"
+        "**/*.ts"
     ],
     "exclude": [
         "node_modules"
