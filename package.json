@@ -7,21 +7,24 @@
     "build": "webpack --config src/front/webpack.config.js",
     "start": "tsc --project src/back/tsconfig.json && node dist/app.js",
     "dev:back": "nodemon --config src/back/nodemon.json",
-    "dev:front": "nodemon --config src/front/nodemon.json"
+    "dev:front": "webpack serve --config src/front/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "three": "^0.156.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^20.6.2",
     "@types/three": "^0.156.0",
+    "copy-webpack-plugin": "^11.0.0",
     "ts-loader": "^9.4.4",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
